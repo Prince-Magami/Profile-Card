@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile Card - Stage 1B</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<article class="profile-card" data-testid="test-profile-card">
+
+  <header class="profile-header">
+    <figure>
+      <img
+        src="my-image.jpeg"
+        alt="User avatar"
+        data-testid="test-user-avatar"
+      />
+    </figure>
+
+    <div class="profile-info">
+      <h2 data-testid="test-user-name">Abubakar Muhammad Magami</h2>
+      <p data-testid="test-user-bio">
+        A Computer Science student at Rayhaan University, Birnin-Kebbi. 
+        Passionate about web development, especially front-end technologies like HTML, CSS, and JavaScript. 
+      </p>
+    </div>
+  </header>
+
+  <section class="time-box">
+    <strong>Current Time (ms):</strong>
+    <span data-testid="test-user-time" id="time"></span>
+  </section>
+
+  <nav data-testid="test-user-social-links" class="socials">
+    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+       data-testid="test-user-social-twitter">Twitter</a>
+
+    <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+       data-testid="test-user-social-github">GitHub</a>
+
+    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+       data-testid="test-user-social-linkedin">LinkedIn</a>
+  </nav>
+
+  <section>
+    <h3>Hobbies</h3>
+    <ul data-testid="test-user-hobbies">
+      <li>Football</li>
+      <li>Gaming</li>
+      <li>Music</li>
+      <li>Coding</li>
+      <li>Learning</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Dislikes</h3>
+    <ul data-testid="test-user-dislikes">
+      <li>Disorganization</li>
+      <li>Delays</li>
+      <li>Noise</li>
+    </ul>
+  </section>
+
+</article>
+
+<script src="script.js"></script>
+</body>
+</html>
